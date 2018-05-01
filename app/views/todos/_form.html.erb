@@ -5,12 +5,12 @@
           <%= form_for @todo do |f| %>
           <p>
             <%= f.label :name %> <br />
-            <%= f.text_field :name %>
+            <%= f.text_field :name, class: 'form-control' %>
           </p>
           
           <p>
             <%= f.label :description %> <br />
-            <%= f.text_area :description %>
+            <%= f.text_area :description, class: 'form-control' %>
           </p>
           
           <p>
