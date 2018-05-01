@@ -1,0 +1,68 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+/* universal */
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+.footer {
+  color: #d3d3d3;
+  margin-top: 300px;
+}
+
+/* The Wells */
+
+.well.profile-black-white {
+    background-color: #ffffff;
+    border: 9px solid black;
+    border-radius: 25px;
+}
+
+.well.profile-black-white-thin {
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.well.profile-black-white-thin-b {
+    background-color: #e6f7ff;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+
+/* Name and Description Tags */
+
+.name {
+  text-align: justify;
+  color: red;
+}
+
+/* Table */
+
+.spacer {
+  visibility: hidden;
+}
+
+.texties {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}

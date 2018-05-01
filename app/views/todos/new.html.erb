@@ -1,4 +1,7 @@
-<h2>Create an New Todo</h2>
+<div class="center jumbotron">
+  <h2>Create an New Todo</h2>
+</div>
+
 
 <% if @todo.errors.any? %>
   <h3>The following errors prevented the todo from being saved</h3>
@@ -11,6 +14,3 @@
 
 <%= render "todos/form" %>
 
-<p>
-  <%= link_to "Index", todos_path %>
-</p>
