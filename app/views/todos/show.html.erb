@@ -1,18 +1,19 @@
 <div class="center jumbotron">
-  <h2>Showing A Todoo</h2>
+  <h2>My To Do</h2>
 </div>
 
-
-
-<p>
-  Name: <%= @todo.name %>
-</p>
-<br />
-<p>
-  Description: <%= @todo.description %>
-</p>
- 
- <p>
-  <%= link_to "Edit This Todo", edit_todo_path(@todo) %> |
-  <%= link_to "Back to Index", todos_path %>
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="well">
+        <p><span class="descriptionText">Name:</span> <%= @todo.name %></p>
+          <br />
+          <p><span class="descriptionText">Description:</span> <%= @todo.description %></p>
+           <p>
+            <%= link_to "Edit This To Do", edit_todo_path(@todo), class: "btn btn-primary" %> 
+            <%= link_to "Back to Index", todos_path, class: "btn btn-warning" %>
+          </p>
+      </div>
+    </div>
+</div>
+</div>

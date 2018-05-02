@@ -57,12 +57,22 @@ textarea {
   color: red;
 }
 
-/* Table */
+/* Index page */
 
 .spacer {
   visibility: hidden;
 }
 
+.bttn {
+  border: 2px solid white;
+}
+
 .texties {
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+/* Show Page */
+.descriptionText {
+  font-weight: bold;
+  font-size: 16px;
 }

@@ -1,12 +1,12 @@
 <div class="center jumbotron">
-  <h1>Todo List</h1>
+  <h1>To Do List</h1>
 </div>
 
 <div class="container">
   <div class="row">
-    <div class="col-md-6 col-md-offset-4">
+    <div class="col-md-8 col-md-offset-2">
         <p>
-          <%= link_to "Create a Todo", new_todo_path, class: "btn btn-success" %>
+          <%= link_to "Create a To Do", new_todo_path, class: "btn btn-success" %>
         </p>
         <div >
           <Table>
@@ -19,9 +19,9 @@
               <tr class ="well profile-black-white-thin row <%= cycle('profile-black-white-thin-b', '') %>"> 
                 <td class="texties"><%= todo.name %></td>
                 <td class="texties"><%= todo.description %></td>
-                <td><%= link_to "Edit", edit_todo_path(todo), class: "btn btn-warning" %></td>
-                <td><%= link_to "View", todo_path(todo), class: "btn btn-info" %></td>
-                <td><%= link_to "Delete", todo_path(todo), method: :delete, data: {confirm: "Are you sure??"}, class: "btn btn-danger" %></td>
+                <td><%= link_to "Edit", edit_todo_path(todo), class: "btn btn-warning bttn" %></td>
+                <td><%= link_to "View", todo_path(todo), class: "btn btn-info bttn" %></td>
+                <td><%= link_to "Delete", todo_path(todo), method: :delete, data: {confirm: "Are you sure??"}, class: "btn btn-danger bttn" %></td>
             </tr>
           <% end %>
         </Table>
