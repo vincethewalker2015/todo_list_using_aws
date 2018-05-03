@@ -1,7 +1,9 @@
-<p>
-  <% flash.each do |name, msg| %>
-      <ul>
-        <li><%= msg %></li>
-      </ul>
-  <% end %>
-</p>
+<div class="container">
+  <p>
+    <% flash.each do |name, msg| %>
+        <ul>
+          <li class="removedot"><%= msg %></li>
+        </ul>
+    <% end %>
+  </p>
+</div>
