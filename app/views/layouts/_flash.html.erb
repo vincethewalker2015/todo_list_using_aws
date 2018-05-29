@@ -1,9 +1,10 @@
-<div class="container">
-  <p>
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
     <% flash.each do |name, msg| %>
-        <ul>
-          <li class="removedot"><%= msg %></li>
-        </ul>
+      <div class="alert alert-<%= name %>">
+        <a href="#" class="close" data-dismiss="alert">&#215;</a>
+        <%= msg %>
+      </div>
     <% end %>
-  </p>
+  </div>
 </div>

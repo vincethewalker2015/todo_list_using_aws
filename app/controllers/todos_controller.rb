@@ -7,7 +7,7 @@ class TodosController < ApplicationController
   def create
     @todo = Todo.new(todo_params)
     if @todo.save
-      flash[:alert] = "Todo was successfully created"
+      flash[:success] = "Todo was successfully created"
       redirect_to todo_path(@todo)
     else
       render 'new'
