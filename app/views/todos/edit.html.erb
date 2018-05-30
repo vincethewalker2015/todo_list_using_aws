@@ -1,17 +1,8 @@
-<div class="center jumbotron">
-  <h2>Edit your To Do</h2>
+<div class="row">
+  <h2 class="text-center">Edit your To Do</h2>
 </div>
 
-
-
-<% if @todo.errors.any? %>
-  <h3>The following errors prevented the todo from being saved</h3>
-  <ul>
-    <% @todo.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-    <% end %>
-  </ul>
-<% end %>
+<%= render "todos/errors" %>
 
 <%= render "todos/form" %>
 

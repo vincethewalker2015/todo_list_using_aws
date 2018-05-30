@@ -29,6 +29,45 @@ textarea {
   margin-top: 300px;
 }
 
+/* Jumbotron */
+
+.jumbotron {
+  background-image: asset-url("woolf.png");
+  background-size: cover;
+  height: 600px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+}
+
+/* Home Page */
+.btn {
+  
+  border-radius: 7px;
+}
+
+.fancy {
+  background-color: #5C606B;
+  color: white;
+  
+}
+
+.fancy:hover {
+  background-color: #CBD1DC;
+  color: white;
+}
+
+.home-text {
+  font-family: bookman body copy;
+}
+
+/* New Page */
+
+.new-page-text {
+  margin-bottom: 80px;
+}
+
 /* The Wells */
 
 .well.profile-black-white {
