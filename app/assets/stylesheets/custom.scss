@@ -32,13 +32,19 @@ textarea {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: asset-url("woolf.png");
+  background-image: asset-url("london.png");
   background-size: cover;
   height: 600px;
 }
 
 .jumbotron h1 {
-  color: #fff;
+  color: #e65c00;  /* fallback for old browsers */
+color: -webkit-linear-gradient(to right, #F9D423, #e65c00);  /* Chrome 10-25, Safari 5.1-6 */
+color: linear-gradient(to right, #F9D423, #e65c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.jumbotron h1 {
+  font-size: 70px;
 }
 
 /* Home Page */
