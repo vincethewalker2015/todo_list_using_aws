@@ -3,6 +3,7 @@ class TodosController < ApplicationController
   
   def new
     @todo = Todo.new
+    #@todo = Todo.paginate(page: params[:page], per_page: 5)
   end
   
   def create
